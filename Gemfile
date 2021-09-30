@@ -9,6 +9,8 @@ gem "rails", "~> 6.1.4", ">= 6.1.4.1"
 gem "puma", "~> 5.0"
 # Use SCSS for stylesheets
 gem "sass-rails", ">= 6"
+# Use bootstrap-sass
+gem "bootstrap-sass"
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem "webpacker", "~> 5.0"
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -27,6 +29,7 @@ gem "jbuilder", "~> 2.7"
 gem "bootsnap", ">= 1.4.4", require: false
 
 group :development, :test do
+  gem "rails-controller-testing"
   gem "minitest"
   gem "minitest-reporters"
   # Use sqlite3 as the database for Active Record
